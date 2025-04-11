@@ -51,12 +51,12 @@ If you have questions, feel free to reach out on our [Slack workspace][slack].
 
 # License
 
-Ion Fusion is licensed under the [Apache License 2.0](LICENSE). Unless required by
+Ion Fusion is licensed under the [Apache License 2.0][apache]. Unless required by
 applicable law or agreed to in writing, software distributed under the License is distributed on
 an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-[License](LICENSE) for the specific language governing permissions and limitations under the
-License.
+License for the specific language governing permissions and limitations under the License.
 
+[apache]: https://www.apache.org/licenses/LICENSE-2.0.html
 [build]:  https://docs.ion-fusion.dev/latest/howto_build.html
 [cli]:    https://docs.ion-fusion.dev/latest/about_cli.html
 [data]:   https://amazon-ion.github.io/ion-docs/docs/spec.html
