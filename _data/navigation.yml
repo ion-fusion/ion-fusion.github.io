@@ -1,0 +1,6 @@
+# https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+
+# Masthead
+main:
+  - title: "Documentation"
+    url: https://docs.ion-fusion.dev/
