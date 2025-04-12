@@ -1,0 +1,19 @@
+# This file defines the authors of content on the site, so their name and
+# contact info can decorate their posts.
+
+# https://mmistakes.github.io/minimal-mistakes/docs/authors/
+# https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-author
+
+Todd:
+    name             : "Todd Jonker"
+    avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+    bio              : "I created Ion Fusion, and I think it's kind of cool."
+    location         : "Seattle, WA, USA"
+    email            :
+    links:
+        - label: "Email"
+          icon: "fas fa-fw fa-envelope-square"
+          # url: "mailto:your.name@email.com"                TODO
+        - label: "GitHub"
+          icon: "fab fa-fw fa-github"
+          url: "https://github.com/toddjonker"
