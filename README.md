@@ -31,7 +31,12 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Pleasantly, the server will regenerate content when pages change.
+By default, the server will regenerate content when pages change. 
+
+* The `--livereload` flag injects some JavaScript to auto-refresh your browser
+  when a page rebuilds.  It's pretty sweet!
+* The `--drafts` flag adds any pages in the `_drafts` directory to the blog, as
+  if they were dated files in `_posts`.
 
 For more info, see
 [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/articles/testing-your-github-pages-site-locally-with-jekyll).
