@@ -29,7 +29,7 @@ services, with some support for sandboxing untrusted code.
 
 Ion Fusion started inside Amazon in 2012, and has been used in production for over a decade, driving
 numerous data processing, workflow management, and analytics systems. It is now an independent 
-Apache-licensed project led by current and former Amazonians.
+[Apache-licensed][apache] project led by current and former Amazonians.
 
 ⚠️ This project is under active development, preparing for a 1.0 open source release. The language
 itself is largely stable, but expect significant changes to Java APIs and packaging as we renovate 
@@ -49,14 +49,7 @@ Please submit bug reports and feature requests via [GitHub issues][issues].
 If you have questions, feel free to reach out on our [Slack workspace][slack].
 
 
-# License
-
-Ion Fusion is licensed under the [Apache License 2.0][apache]. Unless required by
-applicable law or agreed to in writing, software distributed under the License is distributed on
-an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-License for the specific language governing permissions and limitations under the License.
-
-[apache]: https://www.apache.org/licenses/LICENSE-2.0.html
+[apache]: {{ site.baseurl}}{% link license.md %}
 [build]:  https://docs.ion-fusion.dev/latest/howto_build.html
 [cli]:    https://docs.ion-fusion.dev/latest/about_cli.html
 [data]:   https://amazon-ion.github.io/ion-docs/docs/spec.html
