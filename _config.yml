@@ -26,7 +26,7 @@ subtitle                 : "Programming with Data"  # site tagline that appears 
 name                     : "Todd V. Jonker"
 # This appears in the document head meta (for SEO) and in the feed.xml site description:
 description              : "A programmable programming language for working with JSON and Amazon Ion data."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://ion-fusion.dev"  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 
 # This is needed when deploying a forked repo to GitHub Pages:
 #baseurl                  : "/ion-fusion.github.io"  # the subpath of your site, e.g. "/blog"
