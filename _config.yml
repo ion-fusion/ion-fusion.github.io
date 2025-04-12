@@ -162,6 +162,9 @@ footer:
     - label: "Slack"
       icon:  "fab fa-fw fa-slack"
       url:   https://join.slack.com/t/ion-fusion/shared_invite/zt-2y0jr8vh2-bZLa66hdyZ3ykHcgOcYkcA
+    - label: "Discord"
+      icon:  "fab fa-fw fa-discord"
+      url:   https://discord.gg/8pCSR7EyU9
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
