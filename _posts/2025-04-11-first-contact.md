@@ -41,7 +41,7 @@ Keep moving forward!
 
 .T.
 
-[discord]:   TODO
+[discord]:   https://discord.gg/8pCSR7EyU9
 [discuss]:   https://github.com/orgs/ion-fusion/discussions
 [docs]:      https://docs.ion-fusion.dev/
 [new-issue]: https://github.com/ion-fusion/fusion-java/issues/new
