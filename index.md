@@ -40,15 +40,6 @@ To try out the language, we recommend the [`fusion` CLI][cli], but at the moment
 [build it from source][build] (sorry).
 
 
-# Support
-
-This product is not owned or supported by Amazon or AWS, but by a small group of volunteers.
-At this time we cannot promise any particular SLA for responding to issues.
-
-Please submit bug reports and feature requests via [GitHub issues][issues].
-If you have questions, feel free to reach out on our [Slack workspace][slack].
-
-
 [apache]: {{ site.baseurl}}{% link license.md %}
 [build]:  https://docs.ion-fusion.dev/latest/howto_build.html
 [cli]:    https://docs.ion-fusion.dev/latest/about_cli.html

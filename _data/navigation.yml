@@ -6,3 +6,5 @@ main:
     url:   https://docs.ion-fusion.dev/
   - title: "News"
     url:   /news/
+  - title: "Community"
+    url:   /community/
