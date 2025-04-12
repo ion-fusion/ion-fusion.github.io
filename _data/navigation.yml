@@ -2,5 +2,7 @@
 
 # Masthead
 main:
-  - title: "Documentation"
-    url: https://docs.ion-fusion.dev/
+  - title: "Docs"
+    url:   https://docs.ion-fusion.dev/
+  - title: "News"
+    url:   /news/
