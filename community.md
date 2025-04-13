@@ -22,7 +22,7 @@ All of the above is subject to change as we see where people gravitate.
 At this time we cannot promise any particular SLA for responding to issues.
 {: .notice--warning}
 
-[^both]: Each app has unpleasant tradeoffs, and it's unclear which will work best.
+[^both]: Each app has unpleasant tradeoffs, and we hope the community's experience will show what works best. Feedback is welcome!
 
 [discord]:   https://discord.gg/8pCSR7EyU9
 [discuss]:   https://github.com/orgs/ion-fusion/discussions
