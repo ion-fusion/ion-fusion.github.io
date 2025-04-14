@@ -3,6 +3,10 @@ title: The Ion Fusion programming language
 layout: home
 ---
 
+🎉 [Welcome to our new website!][welcome]
+We're working on improvements, but [let us know][feedback] what you think.
+{: .notice--info}
+
 **Ion Fusion** is a programmable programming language for working with JSON and [Amazon Ion][ion]
 data. Its goal is to simplify data processing by eliminating impedance mismatch and enabling
 domain-specific custom syntax. Among its interesting characteristics:
@@ -38,9 +42,11 @@ everything for public development and use.
 {: .notice--warning}
 
 
-[apache]: {{ site.baseurl}}{% link license.md %}
+[apache]: {{ site.baseurl }}{% link license.md %}
 [cli]:    https://docs.ion-fusion.dev/latest/tutorial_cli.html
 [data]:   https://amazon-ion.github.io/ion-docs/docs/spec.html
+[feedback]: {{ site.baseurl }}{% post_url 2025-04-11-first-contact %}
 [ion]:    https://amazon-ion.github.io/ion-docs/index.html
 [library]: https://docs.ion-fusion.dev/latest/javadoc/
 [Racket]: https://racket-lang.org/
+[welcome]: {{ site.baseurl }}{% post_url 2025-04-11-welcome-to-ion-fusion %}
