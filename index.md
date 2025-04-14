@@ -18,16 +18,17 @@ sample:
 
 ```
 // Read each Ion value from stdin into local var `value`
-(for [(value (in_port))]                 
+(for [(value (in_port))]
   // ...and write its marketplace_id field to stdout
-  (writeln (. value "marketplace_id")))  
+  (writeln (. value "marketplace_id")))
 ```
 
-[The `fusion` CLI][cli] has an interactive command console for experimentation, and a "batch" mode
-for running scripts and pipelining data. The runtime can also be embedded into Java applications and
-services, with some support for sandboxing untrusted code.
+To try out the language, check out the `fusion` CLI [tutorial][cli]. The CLI 
+enables running scripts and pipelining data, and has an interactive console for
+experimentation. You can use the `fusion-java` [library][] to embed the runtime
+into Java applications and services, with support for sandboxing untrusted code.
 
-Ion Fusion started inside Amazon in 2012, and has been used in production for over a decade, driving
+Ion Fusion has empowered production services inside Amazon for over a decade, driving
 numerous data processing, workflow management, and analytics systems. It is now an independent 
 [Apache-licensed][apache] project led by current and former Amazonians.
 
@@ -36,15 +37,10 @@ itself is largely stable, but expect significant changes to Java APIs and packag
 everything for public development and use.
 {: .notice--warning}
 
-To try out the language, we recommend the [`fusion` CLI][cli], but at the moment you'll need to
-[build it from source][build] (sorry).
-
 
 [apache]: {{ site.baseurl}}{% link license.md %}
-[build]:  https://docs.ion-fusion.dev/latest/howto_build.html
-[cli]:    https://docs.ion-fusion.dev/latest/about_cli.html
+[cli]:    https://docs.ion-fusion.dev/latest/tutorial_cli.html
 [data]:   https://amazon-ion.github.io/ion-docs/docs/spec.html
 [ion]:    https://amazon-ion.github.io/ion-docs/index.html
-[issues]: https://github.com/ion-fusion/fusion-java/issues
+[library]: https://docs.ion-fusion.dev/latest/javadoc/
 [Racket]: https://racket-lang.org/
-[slack]:  https://join.slack.com/t/ion-fusion/shared_invite/zt-2y0jr8vh2-bZLa66hdyZ3ykHcgOcYkcA
