@@ -5,15 +5,20 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-author
 
 Todd:
-    name             : "Todd Jonker"
-    avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-    bio              : "I created Ion Fusion, and I think it's kind of cool."
-    location         : "Seattle, WA, USA"
-    email            :
-    links:
-        - label: "Email"
-          icon: "fas fa-fw fa-envelope-square"
-          # url: "mailto:your.name@email.com"                TODO
-        - label: "GitHub"
-          icon: "fab fa-fw fa-github"
-          url: "https://github.com/toddjonker"
+  name      : "Todd Jonker"
+  avatar    : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio       : "Building languages since 1985"
+  location  : "Seattle, WA, USA"
+
+  # For sample links and icons, see
+  # https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/author-profile.html
+  links:
+    - label : "Email"
+      icon  : "fas fa-fw fa-envelope-square"
+      url   : #"mailto:todd@toddjonker.net"       # Not sure about posting this
+    - label : "GitHub"
+      icon  : "fab fa-fw fa-github"
+      url   : "https://github.com/toddjonker"
+    - label : "LinkedIn"
+      icon  : "fab fa-fw fa-linkedin"
+      url   : "https://www.linkedin.com/in/todd-jonker"
