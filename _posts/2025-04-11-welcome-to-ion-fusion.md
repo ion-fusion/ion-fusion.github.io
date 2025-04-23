@@ -2,6 +2,7 @@
 title: Welcome, Fusioneers!
 author: Todd
 excerpt_separator: <!--X-->
+feature: 1
 ---
 
 Greetings!  Whether you're a long-time Fusioneer or a curious guest, we're excited that you're

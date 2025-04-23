@@ -2,6 +2,7 @@
 title: First Contact
 author: Todd
 excerpt: We'd love to hear your thoughts on how we can improve our public content.
+feature: 2
 ---
 
 Ion Fusion grew up coupled to Amazon's internal developer toolchain for building, 

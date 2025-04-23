@@ -1,6 +1,10 @@
 ---
 title: The Ion Fusion programming language
-layout: home
+# Below we have a manual "Featured Posts" section where we can pin important posts.
+# At the moment, that's the same as the "Recent Posts" provided by the "home" layout,
+# so we've switched to its parent layout, "archive".
+# We can switch back to the home layout when there are more posts.
+layout: archive
 ---
 
 🎉 [Welcome to our new website!][welcome]
@@ -50,3 +54,15 @@ everything for public development and use.
 [library]: https://docs.ion-fusion.dev/latest/javadoc/
 [Racket]: https://racket-lang.org/
 [welcome]: {{ site.baseurl }}{% post_url 2025-04-11-welcome-to-ion-fusion %}
+
+
+<!-- Forked from layout home.html -->
+<h3 class="archive__subtitle">Featured Posts</h3>
+{% assign posts = site.posts | where_exp: 'p', 'p.feature != nil' 
+                             | sort: 'feature' %}
+{% assign entries_layout = 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
