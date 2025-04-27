@@ -1,10 +1,14 @@
 ---
-title: The Ion Fusion programming language
-# Below we have a manual "Featured Posts" section where we can pin important posts.
-# At the moment, that's the same as the "Recent Posts" provided by the "home" layout,
-# so we've switched to its parent layout, "archive".
-# We can switch back to the home layout when there are more posts.
-layout: archive
+title: Ion Fusion
+layout: splash
+excerpt: A programming language for working with JSON and Amazon Ion data.
+header:
+  overlay_image: /assets/images/brecht-corbeel-RWQN1rMK4kU-unsplash.jpg
+  # TODO make this less ugly:
+  caption: "Image credit: [Brecht Corbeel](https://unsplash.com/@brechtcorbeel)"
+  actions:
+    - label: "Download"
+      url: "https://github.com/ion-fusion/fusion-java/releases"
 ---
 
 🎉 [Welcome to our new website!][welcome]
