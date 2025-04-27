@@ -14,7 +14,8 @@ search: false
 .page__hero {
   &--overlay {
     .page__title,
-    .page__lead {
+    .page__lead,
+    .btn {
       text-shadow:
         // Multiple shadows gives a gradient of sorts, so the text pops a bit.
         // https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow#multiple_shadows
