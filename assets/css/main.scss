@@ -23,5 +23,9 @@ search: false
         0 0 0.25em black;
         // 1px 1px 4px rgba(#000, 0.5);  // Default from theme
     }
+    .btn {
+      background-color: rgba(#000, 0.4);
+      border: 2px solid #fff;
+    }
   }
 }
