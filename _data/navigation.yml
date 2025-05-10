@@ -8,3 +8,5 @@ main:
     url:   /news/
   - title: "Community"
     url:   /community/
+  - title: "Playground"
+    url:   https://play.ion-fusion.dev/
