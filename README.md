@@ -1,9 +1,58 @@
 # ion-fusion.github.io
-Source of org-level GitHub Pages
 
-## Local Development
+Source for the Fusion website at: <https://ion-fusion.dev/>
 
-On Mac, you'll need to install Ruby via Homebrew:
+The site is currently built with Jekyll, and deployed via GitHub Pages.
+
+## Development
+
+### Docker
+
+If you have a Docker-compatible CLI ([docker], [podman], [nerdctl], ...) capable of running Debian
+Linux containers, you can build and serve the site via the included [Dockerfile](Dockerfile) with
+invocations like:
+
+```shell
+docker build -t fusion-site .
+```
+
+Or, without even acquiring the sources:
+
+```shell
+docker build -t fusion-site https://github.com/ion-fusion/ion-fusion.github.io.git
+```
+
+After building, you can run the jekyll server with invocations like:
+
+```shell
+docker run -p 4000:4000 fusion-site
+```
+
+Or, to leverage Jekyll's auto-generation and live-reloading:
+
+```shell
+docker run -p 4000:4000 -p 35729:35729 -v "$(pwd):/home/build/fusion-site" fusion-site
+```
+
+You can pass extra flags to `jeykll serve` with invocations like:
+
+```shell
+docker run -p 4000:4000 fusion-site bundlew exec-jekyll-serve --drafts
+```
+
+Or, even run arbitrary `jekyll` commands with:
+
+```shell
+docker run fusion-site bundlew exec jekyll --help
+```
+
+[docker]: https://www.docker.com/products/cli/
+[podman]: https://podman.io/
+[nerdctl]: https://github.com/containerd/nerdctl
+
+### macOS
+
+On Mac, you'll probably install Ruby via Homebrew:
 
 ```shell
 brew install ruby
@@ -17,15 +66,13 @@ PATH=/opt/homebrew/opt/ruby/bin:$PATH
 
 (I like to use `direnv` for the latter, so it's a local configuration.)
 
-
-### After checkout
+After checkout:
 
 ```shell
 bundle install
 ```
 
-
-### Serve the Site Locally
+To serve the site locally:
 
 ```shell
 bundle exec jekyll serve
