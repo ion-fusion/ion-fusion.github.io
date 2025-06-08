@@ -6,7 +6,7 @@
 FROM debian:bookworm-slim@sha256:90522eeb7e5923ee2b871c639059537b30521272f10ca86fdbbbb2b75a8c40cd
 
 # Use Debian snapshot repositories; see https://snapshot.debian.org/
-ARG DEBIAN_SNAPSHOT="20250531T000000Z"
+ARG DEBIAN_SNAPSHOT="20250608T000000Z"
 COPY <<EOF /etc/apt/sources.list.d/debian.sources
 Types: deb
 URIs: http://snapshot.debian.org/archive/debian/${DEBIAN_SNAPSHOT}
@@ -28,7 +28,9 @@ RUN --network=default <<EOF
 set -eux
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get --assume-yes  install ruby bundler
+# we need ruby-dev and a C toolchain to build gems with native extensions:
+apt-get --assume-yes --no-install-recommends install \
+    ruby bundler ruby-dev gcc g++ libc6-dev make patch xz-utils
 apt-get clean
 EOF
 
@@ -79,7 +81,7 @@ esac
 EOF
 
 # Install Ruby packages:
-COPY --chown=build:build Gemfile ../Gemfile
+COPY --chown=build:build Gemfile ../
 RUN --network=default bundlew install
 
 # Fix Scss file encoding errors; https://github.com/jekyll/jekyll/issues/4268
