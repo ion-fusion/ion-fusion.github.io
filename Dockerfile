@@ -3,21 +3,21 @@
 # See the README.md for some example docker invocations with this Dockerfile.
 
 # Debian official container images; https://hub.docker.com/_/debian
-FROM debian:bookworm-slim@sha256:90522eeb7e5923ee2b871c639059537b30521272f10ca86fdbbbb2b75a8c40cd
+FROM debian:trixie-slim@sha256:5fb70129351edec3723d13f427400ecae3f13b83750e23ad47c46721effcf2db
 
 # Use Debian snapshot repositories; see https://snapshot.debian.org/
-ARG DEBIAN_SNAPSHOT="20250608T000000Z"
+ARG DEBIAN_SNAPSHOT="20260412T022414Z"
 COPY <<EOF /etc/apt/sources.list.d/debian.sources
 Types: deb
 URIs: http://snapshot.debian.org/archive/debian/${DEBIAN_SNAPSHOT}
-Suites: bookworm bookworm-updates
+Suites: trixie trixie-updates
 Components: main
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 Check-Valid-Until: no
 
 Types: deb
 URIs: http://snapshot.debian.org/archive/debian-security/${DEBIAN_SNAPSHOT}
-Suites: bookworm-security
+Suites: trixie-security
 Components: main
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 Check-Valid-Until: no
